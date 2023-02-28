@@ -23,3 +23,5 @@ $mesusers | ForEach-Object { $cpt = 1 } {
     
     $cpt++
 }
+
+$mesusers | ForEach-Object {}
