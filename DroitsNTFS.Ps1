@@ -2,6 +2,8 @@
 
 $RootUserath = "C:\_Partages\_Users"
 
+New-Item -ItemType "Directory" -Path $RootUserath
+
 $listeusers = get-aduser -filter * 
 $listeusers | foreach-object {
     $user = $_.samaccountname
