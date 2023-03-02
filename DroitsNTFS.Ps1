@@ -4,7 +4,7 @@ $RootUserath = "C:\_Partages\_Users"
 
 $listeusers = get-aduser -filter * 
 $listeusers | foreach-object {
-    $user = $_.name
+    $user = $_.samaccountname
 
     $userfullpath = Join-path $RootUserath $user
 
